@@ -23,8 +23,7 @@ public class IndexServlet extends HttpServlet {
         super();
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         EntityManager em = DBUtil.createEntityManager();
 
         List<Message> messages = em.createNamedQuery("getAllMessages", Message.class).getResultList();
@@ -34,3 +33,4 @@ public class IndexServlet extends HttpServlet {
     }
 
 }
+
