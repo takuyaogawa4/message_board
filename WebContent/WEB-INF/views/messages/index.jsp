@@ -27,7 +27,7 @@
 
                 <c:choose>
                     <c:when test="${i == page}">
-                        <c:out value="${i}" />%nbsp;
+                        <c:out value="${i}" />&nbsp;
                     </c:when>
 
 
